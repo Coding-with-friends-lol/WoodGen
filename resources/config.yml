@@ -4,21 +4,17 @@
 
 "levelname": "world"
 
-"coal_ore": true
+"oak_wood": true
 
-"iron_ore": true
+"spruce_wood": true
 
-"gold_ore": true
+"birch_wood": true
 
-"diamond_ore": true
+"dark_oak_wood": true
 
-"emerald_ore": true
+"jungle_wood": true
 
-"quartz_ore": true
-
-"redstone_ore": true
-
-"lapis_ore": true
+"acacia_wood": true
 
 ...
 
