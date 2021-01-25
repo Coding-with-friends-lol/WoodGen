@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener{
         $player = $event->getPlayer();
         $block = $event->getBlock();
         if($block->getLevel()->getName() === $this->config->get("levelname")){
-            if($block->getId() === Block::COAL_ORE && $this->config->get("coal_ore") === true){
+            if($block->getId() === 17 && $this->config->get("coal_ore") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
                 }
