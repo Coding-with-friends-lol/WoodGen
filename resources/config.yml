@@ -1,20 +1,30 @@
 ---
 
-"delay": 30 #Time In Seconds
+"ow_delay": 30 #delay of oak wood in seconds
 
-"levelname": "world"
+"sw_delay": 30 #delay of spruce wood in seconds
 
-"oak_wood": true
+"bw_delay": 30 #delay of birch wood in seconds
 
-"spruce_wood": true
+"dow_delay": 30 #delay of dark oak wood in seconds
 
-"birch_wood": true
+"aw_delay": 30 #delay of acacia wood in seconds
 
-"dark_oak_wood": true
+"jw_delay": 30 #delay of jungle wood in seconds
 
-"jungle_wood": true
+"levelname": "world" #In what world should the WoodGen Work
 
-"acacia_wood": true
+"oak_wood": true #Enable or disable oak wood gen
+
+"spruce_wood": true #Enable or disable spruce wood gen
+
+"birch_wood": true #Enable or disable birch wood gen
+
+"dark_oak_wood": true #Enable or disable dark oak wood gen
+
+"jungle_wood": true #Enable or disable jungle wood gen
+
+"acacia_wood": true #Enable or disable acacia wood gen
 
 ...
 
