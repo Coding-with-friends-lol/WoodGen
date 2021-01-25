@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener{
                 $event->setCancelled();
                 $event->setXpDropAmount(0);
                 $player->addXp($event->getXpDropAmount());
-                $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(-161));
+                $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(0));
                 $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("ow_delay"));
             } elseif($block->getId() === Block::IRON_ORE && $this->config->get("spruce_wood") === true){
                 foreach ($event->getDrops() as $drop) {
