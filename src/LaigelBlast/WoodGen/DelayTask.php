@@ -2,7 +2,7 @@
 
 
 
-namespace LuciferVerma\XOreGen;
+namespace LaigelBlast\WoodGen;
 
 
 
