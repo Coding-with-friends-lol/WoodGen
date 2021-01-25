@@ -1,4 +1,4 @@
-# XOreGen [![](https://poggit.pmmp.io/shield.state/XOreGen)](https://poggit.pmmp.io/ci/LuciferVerma/XOreGen/XOreGen)
+# WoodGen [![](https://poggit.pmmp.io/shield.state/XOreGen)](https://poggit.pmmp.io/ci/LuciferVerma/XOreGen/XOreGen)
 Ore regenerator. Use it to make mines.
 ## Discription: <br>
 This plugin regenerate ore in given time. If you see the config.yml there you will gind everything that you need. <br>
