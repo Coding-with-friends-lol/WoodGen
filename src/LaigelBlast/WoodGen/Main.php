@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
                 $event->setXpDropAmount(0);
                 $player->addXp($event->getXpDropAmount());
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("ow_delay"));
             } elseif($block->getId() === Block::IRON_ORE && $this->config->get("spruce_wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
@@ -42,7 +42,7 @@ class Main extends PluginBase implements Listener{
                 $event->setXpDropAmount(0);
                 $player->addXp($event->getXpDropAmount());
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("sw_delay"));
             } elseif($block->getId() === Block::GOLD_ORE && $this->config->get("birch_wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
@@ -52,7 +52,7 @@ class Main extends PluginBase implements Listener{
                 $event->setXpDropAmount(0);
                 $player->addXp($event->getXpDropAmount());
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("bw_delay"));
             } elseif($block->getId() === Block::DIAMOND_ORE && $this->config->get("dark_oak_wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
@@ -62,7 +62,7 @@ class Main extends PluginBase implements Listener{
                 $event->setCancelled();
                 $event->setXpDropAmount(0);
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("dow_delay"));
             } elseif($block->getId() === Block::EMERALD_ORE && $this->config->get("acacia_wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
@@ -72,7 +72,7 @@ class Main extends PluginBase implements Listener{
                 $event->setCancelled();
                 $event->setXpDropAmount(0);
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("aw_delay"));
             } elseif($block->getId() === Block::QUARTZ_ORE && $this->config->get("jungle_wood") === true){
                 foreach ($event->getDrops() as $drop) {
                     $event->getPlayer()->getInventory()->addItem($drop);
@@ -82,7 +82,7 @@ class Main extends PluginBase implements Listener{
                 $event->setCancelled();
                 $event->setXpDropAmount(0);
                 $block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
-                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("delay"));
+                $this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("jw_delay"));
             }
         }
     }
