@@ -3,7 +3,7 @@ name: WoodGen
 version: 1.0.0
 
 website: www.cosmocraft.ml
-main: LuciferVerma\XOreGen\Main
+main: LaigelBlast\WoodGen\Main
 
 api: 3.0.0
 
