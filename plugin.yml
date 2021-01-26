@@ -2,25 +2,6 @@ name: WoodGen
 
 version: 1.0.0
 
-website: www.cosmocraft.ml
 main: LaigelBlast\WoodGen\Main
 
 api: 3.0.0
-
-discription: This plugin helps you to regenerate ore in given time is a specific world
-
-how_to_use: 1. install the plugin. 2. Go to plugins data folder open XOreGen folder there is a config.yml there open it. 3. set the delay. Put time in seconds. ores will regenerate after given time. 4. level name. put world name there. like where you want ore to regenerate. put the world name there. 5. enable or disable ore regeneration of ores. you can set which ore will regenerate and which will not. 6. after this you are done configuring. re-start the Server and good to go. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
