@@ -52,7 +52,7 @@ class Main extends PluginBase implements Listener{
 				$player->addXp($event->getXpDropAmount());
 				$block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
 				$this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("bw_delay"));
-			}elseif(in_array($block->getId(), [17, 0, 3]) && $this->config->get("dark_oak_wood") === true){
+			}elseif(in_array($block->getId(), [162, 0, 1]) && $this->config->get("dark_oak_wood") === true){
 				foreach($event->getDrops() as $drop){
 					$event->getPlayer()->getInventory()->addItem($drop);
 				}
@@ -62,7 +62,7 @@ class Main extends PluginBase implements Listener{
 				$event->setXpDropAmount(0);
 				$block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
 				$this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("dow_delay"));
-			}elseif($block->getId() === Block::EMERALD_ORE && $this->config->get("acacia_wood") === true){
+			}elseif($block->getId() === 162 && $this->config->get("acacia_wood") === true){
 				foreach($event->getDrops() as $drop){
 					$event->getPlayer()->getInventory()->addItem($drop);
 				}
@@ -72,7 +72,7 @@ class Main extends PluginBase implements Listener{
 				$event->setXpDropAmount(0);
 				$block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
 				$this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("aw_delay"));
-			}elseif($block->getId() === Block::QUARTZ_ORE && $this->config->get("jungle_wood") === true){
+			}elseif(in_array($block->getId(), [17, 0, 3]) && $this->config->get("jungle_wood") === true){
 				foreach($event->getDrops() as $drop){
 					$event->getPlayer()->getInventory()->addItem($drop);
 				}
