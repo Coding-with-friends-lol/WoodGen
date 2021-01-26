@@ -72,7 +72,7 @@ class Main extends PluginBase implements Listener{
 				$event->setXpDropAmount(0);
 				$block->getLevelNonNull()->setBlock($block->asVector3(), Block::get(Block::BEDROCK));
 				$this->getScheduler()->scheduleDelayedTask(new DelayTask($this, $block), 20 * $this->config->get("aw_delay"));
-			}elseif(in_array($block->getId(), [17, 0, 3]) && $this->config->get("jungle_wood") === true){
+			}elseif(in_array($block->getId(), [59, 0, 0]) && $this->config->get("jungle_wood") === true){
 				foreach($event->getDrops() as $drop){
 					$event->getPlayer()->getInventory()->addItem($drop);
 				}
