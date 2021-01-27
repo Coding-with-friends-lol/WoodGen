@@ -12,7 +12,7 @@ use pocketmine\scheduler\Task;
 
 
 
-cclass DelayTask extends Task{
+class DelayTask extends Task{
 
     public $block, $plugin;
 
